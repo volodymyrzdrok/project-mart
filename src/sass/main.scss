@@ -1,0 +1,27 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+//  VARS
+
+@import './vars.scss';
+
+// BASE
+
+@import './normalize.scss';
+@import './base.scss';
+
+// COMPONENTS
+
+@import './components/header.scss';
+@import './components/banner.scss';
+@import './components/logo.scss';
+@import './components/container.scss';
+@import './components/nav-site.scss';
+@import './components/burger.scss';
+@import './components/hero.scss';
+@import './components/snaps.scss';
+@import './components/directions.scss';
+@import './components/advantages.scss';
+@import './components/structure-section.scss';
+@import './components/footer.scss';

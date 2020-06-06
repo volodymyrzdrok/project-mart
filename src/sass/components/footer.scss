@@ -1,0 +1,279 @@
+.footer-logo {
+  width: 108px;
+  display: inline-block;
+}
+
+.address {
+  color: $footer-color;
+  font-size: 14px;
+  line-height: 1.78;
+  font-family: $general-font;
+  font-weight: 400;
+}
+
+.contact-list__link {
+  color: $footer-color;
+  font-size: 14px;
+  line-height: 1.78;
+  font-family: $general-font;
+  text-decoration: none;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+  }
+}
+
+.footer-callback-button {
+  color: $white-color;
+  font-family: $general-font;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: $accent-color;
+  width: 192px;
+  min-height: 42px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 250ms $animation;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 5px rgba(252, 174, 38, 0.4);
+  }
+}
+
+.social-networks-link--icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transform: scale(1);
+  transition: transform 250ms $animation;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+.site-rules-list__link {
+  color: #626263;
+  font-size: 12px;
+  line-height: 2.08;
+  font-family: $secondary-font;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+  }
+}
+
+.social-networks-link {
+  margin-right: 20px;
+  text-decoration: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer {
+  background-color: #1c1c1c;
+}
+
+.site-rules {
+  background-color: #0d0d0d;
+}
+
+// MOBILE
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 40px 0;
+  }
+
+  .site-rules {
+    padding: 26px 0;
+  }
+
+  .footer-container {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 64px;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .address {
+    margin-bottom: 32px;
+  }
+
+  .contact-list {
+    margin-bottom: 36px;
+  }
+
+  .footer-callback-button {
+    margin-bottom: 34px;
+  }
+
+  .anchor {
+    display: none;
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+  .footer {
+    padding-top: 54px;
+    padding-bottom: 40px;
+  }
+
+  .site-footer {
+    position: relative;
+  }
+
+  .site-rules {
+    padding: 20px 0;
+  }
+
+  .footer-container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 72px;
+  }
+
+  .footer-info {
+    display: flex;
+  }
+
+  .footer-callback-button {
+    margin-bottom: 20px;
+  }
+
+  .social-networks {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 26px;
+  }
+
+  .address {
+    margin-right: 44px;
+  }
+
+  .contact-list {
+    margin-right: 44px;
+  }
+
+  .site-rules-list {
+    display: flex;
+  }
+
+  .site-rules-list__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .anchor {
+    display: inline-block;
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: absolute;
+    top: -25px;
+    right: 50px;
+    cursor: pointer;
+    box-shadow: 0 3px 7px 0 rgba(5, 5, 5, 0.8);
+    background-image: url(../images/icons/anchor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1300px) {
+  .footer {
+    padding-top: 56px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+  .site-rules {
+    padding: 20px 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+  .footer-container {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .site-rules-list {
+    display: flex;
+  }
+
+  .site-rules-list__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footer-info {
+    display: flex;
+  }
+
+  .footer-actions {
+    display: flex;
+  }
+
+  .footer-callback-button {
+    height: 42px;
+    margin-right: 160px;
+  }
+
+  .address {
+    margin-right: 140px;
+  }
+
+  .contact-list {
+    margin-right: 160px;
+  }
+
+  .anchor {
+    display: inline-block;
+    background-color: #333;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+    cursor: pointer;
+    box-shadow: 0 3px 7px 0 rgba(5, 5, 5, 0.8);
+    background-image: url(../images/icons/anchor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
